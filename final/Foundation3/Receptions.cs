@@ -1,6 +1,6 @@
 public class Receptions : Event
 {
-    private string _email;
+    private string _rsvpEmail;
 
     public Receptions()
     {
@@ -9,6 +9,6 @@ public class Receptions : Event
         this._date = "27/04/23";
         this._time = "";
         this._address = "";
-        this._email = "";
+        this._rsvpEmail = "";
     }
 }
