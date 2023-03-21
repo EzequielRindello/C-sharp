@@ -15,6 +15,7 @@ class Program
     {
         Console.WriteLine("Welcome to the program!");
     }
+
     static string PromptUserName()
     {
         Console.Write("Please enter your name: ");
@@ -38,5 +39,4 @@ class Program
     {
         Console.WriteLine($"{Name}, the square of your number is: {Square} ");
     }
-    
 }
