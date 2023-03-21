@@ -4,7 +4,7 @@ public class Event
     protected string _description;
     protected string _date;
     protected string _time;
-    protected string _address;
+    protected Address _address;
 
     public string StandardDetails()
     {

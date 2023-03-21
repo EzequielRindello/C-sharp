@@ -8,7 +8,9 @@ public class OutdoorGatherings : Event
         this._description = "Dont have a limit on attendees";
         this._date = "29/04/23";
         this._time = "12 P.M";
-        this._address = "";
+        Address outdoorGatheringsAddress = new Address("301 W 13th St Suite 100", "Kansas City");
+        outdoorGatheringsAddress.GetFullAddress();
+        this._address = outdoorGatheringsAddress;
         this._statementOfTheWeather = "Sunny";
     }
 }
