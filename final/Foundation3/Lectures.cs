@@ -6,7 +6,7 @@ public class Lectures : Event
     public Lectures()
     {
         this._eventTitle = "Lectures";
-        this._description = "";
+        this._description = "Have a speaker and limited capacity.";
         this._date = "08/04/23";
         this._time = "19 Hs.";
         this._address = "Calle falsa 123";
