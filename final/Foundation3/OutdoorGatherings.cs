@@ -4,11 +4,11 @@ public class OutdoorGatherings : Event
 
     public OutdoorGatherings()
     {
-        this._eventTitle = "";
-        this._description = "";
-        this._date = "";
-        this._time = "";
+        this._eventTitle = "Outdoor Gatherings";
+        this._description = "Dont have a limit on attendees";
+        this._date = "29/04/23";
+        this._time = "12 P.M";
         this._address = "";
-        this._statementOfTheWeather = "";
+        this._statementOfTheWeather = "Sunny";
     }
 }

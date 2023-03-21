@@ -22,19 +22,19 @@ class Program
                     Console.Clear();
                     Event event1 = new Lectures();
                     Console.WriteLine(event1.StandardDetails());
-                    Console.ReadKey();
+                    event1.ReadKey();
                     break;
                 case "2":
                     Console.Clear();
                     Event event2 = new OutdoorGatherings();
                     Console.WriteLine(event2.StandardDetails());
-                    Console.ReadKey();
+                    event2.ReadKey();
                     break;
                 case "3":
                     Console.Clear();
                     Event event3 = new Receptions();
                     Console.WriteLine(event3.StandardDetails());
-                    Console.ReadKey();
+                    event3.ReadKey();
                     break;
                 case "4":
                     Console.WriteLine("Thanks for using our program, goodbye!");
