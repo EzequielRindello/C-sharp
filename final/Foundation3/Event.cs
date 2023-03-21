@@ -17,6 +17,6 @@ public class Event
 
     public string StandardDetails()
     {
-        return $"Event: {_eventTitle}, Description:{_description}, Date: {_date},Time: {_time}, Address: {_address}";
+        return $"Event: {_eventTitle}, Description: {_description}, Date: {_date},Time: {_time}, Address: {_address}";
     }
 }
