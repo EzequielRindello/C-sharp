@@ -9,7 +9,9 @@ public class Lectures : Event
         this._description = "Have a speaker and limited capacity";
         this._date = "08/04/23";
         this._time = "19 P.M";
-        this._address = "301 W 13th St Suite 100";
+        Address lecturesAddress = new Address("301 W 13th St Suite 100", "Kansas City");
+        lecturesAddress.GetFullAddress();
+        this._address = lecturesAddress;
         this._speakerName = "Mel Robbins";
         this._capacity = 300;
     }
