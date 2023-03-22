@@ -4,7 +4,7 @@ public class Receptions : Event
 
     public Receptions()
     {
-        this._eventTitle = "";
+        this._eventTitle = "Receptions";
         this._description = "Require people to register beforehand";
         this._date = "27/04/23";
         this._time = "";
