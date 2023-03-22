@@ -8,11 +8,11 @@ class Program
         Console.Clear();
         Console.WriteLine("Program 3: Inheritance with Event Planning.");
         Console.WriteLine();
-        Console.WriteLine("Hello, please select an event from the following:");
 
         while (true)
         {
             // Menu and user input to select what objet to create.
+            Console.WriteLine("Please select an event from the following:");
             Console.WriteLine("   1: Lectures \n   2: Outdoor Gatherings\n   3: Receptions\n   4: Quit");
             string userInput = Console.ReadLine();
 
@@ -37,6 +37,7 @@ class Program
                         Console.WriteLine(event1.ShortDescription());
                     }
                     event1.ReadKey();
+                    Console.Clear();
                     break;
                 case "2":
                     // Creates a outdoor gathering objetc.
@@ -57,6 +58,7 @@ class Program
                         Console.WriteLine(event2.ShortDescription());
                     }
                     event2.ReadKey();
+                    Console.Clear();
                     break;
                 case "3":
                     // Creates a reception objetc.
@@ -77,6 +79,7 @@ class Program
                         Console.WriteLine(event3.ShortDescription());
                     }
                     event3.ReadKey();
+                    Console.Clear();
                     break;
                 case "4":
                     Console.WriteLine("Thanks for using our program, goodbye!");
@@ -85,6 +88,7 @@ class Program
                     Console.Clear();
                     Console.WriteLine("Error. Please enter a valid choice!");
                     Thread.Sleep(3000);
+                    Console.Clear();
                     break;
             }
         }
