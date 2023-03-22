@@ -16,6 +16,7 @@ class Program
             Console.WriteLine("   1: Lectures \n   2: Outdoor Gatherings\n   3: Receptions\n   4: Quit");
             string userInput = Console.ReadLine();
 
+            
             switch (userInput)
             {
                 case "1":
