@@ -23,6 +23,7 @@ class Program
                     Console.Clear();
                     Lectures event1 = new Lectures();
                     string choice1 = Menu();
+                    Console.WriteLine();
                     if (choice1 == "1")
                     {
                         Console.WriteLine(event1.StandardDetails());
@@ -42,6 +43,7 @@ class Program
                     Console.Clear();
                     OutdoorGatherings event2 = new OutdoorGatherings();
                     string choice2 = Menu();
+                    Console.WriteLine();
                     if (choice2 == "1")
                     {
                         Console.WriteLine(event2.StandardDetails());
@@ -61,6 +63,7 @@ class Program
                     Console.Clear();
                     Receptions event3 = new Receptions();
                     string choice3 = Menu();
+                    Console.WriteLine();
                     if (choice3 == "1")
                     {
                         Console.WriteLine(event3.StandardDetails());
@@ -90,7 +93,7 @@ class Program
     public static string Menu()
     {
         // Presents the user with a menu and retur and answer to execute the if/else if/else in the switch.
-        Console.WriteLine("Select an event from the following:");
+        Console.WriteLine("Select a choice from the following:");
         Console.WriteLine("   1: Standard details \n   2: Full details\n   3: Short description");
         return Console.ReadLine();
     }
