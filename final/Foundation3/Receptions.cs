@@ -13,4 +13,9 @@ public class Receptions : Event
         this._address = receptionsAddress;
         this._rsvpEmail = "";
     }
+
+    public  void ReceptionsDetails()
+    {
+
+    }
 }

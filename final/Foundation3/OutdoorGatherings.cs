@@ -13,4 +13,9 @@ public class OutdoorGatherings : Event
         this._address = outdoorGatheringsAddress;
         this._statementOfTheWeather = "Sunny";
     }
+
+    public  void OutdoorGatheringsDetails()
+    {
+
+    }
 }

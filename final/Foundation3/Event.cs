@@ -17,4 +17,9 @@ public class Event
         Console.WriteLine("Enter any key to continue when you fell ready.");
         Console.ReadKey();
     }
+
+    public string ShortDescription()
+    {
+        return $"{_eventTitle} | {_date}";
+    }
 }

@@ -16,4 +16,8 @@ public class Lectures : Event
         this._capacity = 300;
     }
     // The High 5 Habit is the book
+    public  void LecturesDetails()
+    {
+
+    }
 }
