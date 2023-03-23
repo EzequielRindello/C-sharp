@@ -26,7 +26,7 @@ public class Lectures : Event
         Console.WriteLine("The opportunity to ask questions and criticize is offered in a respectful environment.");
         Console.WriteLine($"The capacity for event will be {_capacity}, be sure to hurry up to sign up!");
         Console.WriteLine($"The book that we are going to analyze is {_book}.");
-        StandardDetails();
+        Console.WriteLine(StandardDetails());
         Console.WriteLine("------------------------------------------------------------------------------------------------------------------");
 
     }

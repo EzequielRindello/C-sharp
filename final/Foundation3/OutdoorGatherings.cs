@@ -20,7 +20,7 @@ public class OutdoorGatherings : Event
         Console.WriteLine("------------------------------------------------------------------------------------------------------------------");
         Console.WriteLine("Outdoor events are conditioned by the weather.");
         Console.WriteLine("These types of events do not have a capacity for guests, feel free to attend!");
-        StandardDetails();
+        Console.WriteLine(StandardDetails());
         Console.WriteLine("------------------------------------------------------------------------------------------------------------------");
     }
 }
