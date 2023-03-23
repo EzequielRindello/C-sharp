@@ -27,16 +27,24 @@ class Program
                     if (choice1 == "1")
                     {
                         Console.WriteLine(event1.StandardDetails());
+                        event1.ReadKey();
                     }
                     else if (choice1 == "2")
                     {
                         event1.LecturesDetails();
+                        event1.ReadKey();
+                    }
+                    else if (choice1 == "3")
+                    {
+                        Console.WriteLine(event1.ShortDescription());
+                        event1.ReadKey();
                     }
                     else
                     {
-                        Console.WriteLine(event1.ShortDescription());
+                        Console.Clear();
+                        Console.WriteLine("Error. Please enter a valid choice!");
+                        Thread.Sleep(3000);
                     }
-                    event1.ReadKey();
                     Console.Clear();
                     break;
                 case "2":
@@ -48,16 +56,24 @@ class Program
                     if (choice2 == "1")
                     {
                         Console.WriteLine(event2.StandardDetails());
+                        event2.ReadKey();
                     }
                     else if (choice2 == "2")
                     {
                         event2.OutdoorGatheringsDetails();
+                        event2.ReadKey();
+                    }
+                    else if (choice2 == "3")
+                    {
+                        Console.WriteLine(event2.ShortDescription());
+                        event2.ReadKey();
                     }
                     else
                     {
-                        Console.WriteLine(event2.ShortDescription());
+                        Console.Clear();
+                        Console.WriteLine("Error. Please enter a valid choice!");
+                        Thread.Sleep(3000);
                     }
-                    event2.ReadKey();
                     Console.Clear();
                     break;
                 case "3":
@@ -69,16 +85,24 @@ class Program
                     if (choice3 == "1")
                     {
                         Console.WriteLine(event3.StandardDetails());
+                        event3.ReadKey();
                     }
                     else if (choice3 == "2")
                     {
                         event3.ReceptionsDetails();
+                        event3.ReadKey();
+                    }
+                    else if (choice3 == "3")
+                    {
+                        Console.WriteLine(event3.ShortDescription());
+                        event3.ReadKey();
                     }
                     else
                     {
-                        Console.WriteLine(event3.ShortDescription());
+                        Console.Clear();
+                        Console.WriteLine("Error. Please enter a valid choice!");
+                        Thread.Sleep(3000);
                     }
-                    event3.ReadKey();
                     Console.Clear();
                     break;
                 case "4":
