@@ -4,14 +4,12 @@ public class Lectures : Event
     private int _capacity;
     private string _book;
 
-    public Lectures(string speakerName, int capacity, string date, string time, string book)
+    public Lectures(string speakerName, int capacity, string date, string time, string book, Address lecturesAddress)
     {
         this._eventTitle = "Lectures";
         this._description = "Have a speaker and limited capacity";
         this._date = date;
         this._time = time;
-        Address lecturesAddress = new Address("301 W 13th St Suite 100", "Kansas City");
-        lecturesAddress.GetFullAddress();
         this._address = lecturesAddress;
         this._speakerName = speakerName;
         this._capacity = capacity;

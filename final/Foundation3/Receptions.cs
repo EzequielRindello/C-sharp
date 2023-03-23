@@ -2,14 +2,12 @@ public class Receptions : Event
 {
     private string _rsvpEmail;
 
-    public Receptions(string date, string time, string rsvpEmail)
+    public Receptions(string date, string time, string rsvpEmail, Address receptionsAddress)
     {
         this._eventTitle = "Receptions";
         this._description = "Require people to register beforehand";
         this._date = date;
         this._time = time;
-        Address receptionsAddress = new Address("720 W Mallon Ave", "Espocane");
-        receptionsAddress.GetFullAddress();
         this._address = receptionsAddress;
         this._rsvpEmail = rsvpEmail;
     }

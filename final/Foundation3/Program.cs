@@ -21,7 +21,9 @@ class Program
                 case "1":
                     // Creates a lecture objetc.
                     Console.Clear();
-                    Lectures event1 = new Lectures("Mel Robbins", 300, "08/04/23", "19 P.M", "The High 5 Habit");
+                    Address lecturesAddress = new Address("301 W 13th St Suite 100", "Kansas City");
+                    lecturesAddress.GetFullAddress();
+                    Lectures event1 = new Lectures("Mel Robbins", 300, "08/04/23", "19 P.M", "The High 5 Habit", lecturesAddress);
                     string choice1 = Menu();
                     Console.WriteLine();
                     if (choice1 == "1")
@@ -50,7 +52,9 @@ class Program
                 case "2":
                     // Creates a outdoor gathering objetc.
                     Console.Clear();
-                    OutdoorGatherings event2 = new OutdoorGatherings("29/04/23","12 P.M","Sunny");
+                    Address outdoorGatheringsAddress = new Address("1025 25th St N", "Great Falls");
+                    outdoorGatheringsAddress.GetFullAddress();
+                    OutdoorGatherings event2 = new OutdoorGatherings("29/04/23", "12 P.M", "Sunny", outdoorGatheringsAddress);
                     string choice2 = Menu();
                     Console.WriteLine();
                     if (choice2 == "1")
@@ -79,7 +83,9 @@ class Program
                 case "3":
                     // Creates a reception objetc.
                     Console.Clear();
-                    Receptions event3 = new Receptions("27/04/23", "17 P.M", "rsvp.27@gmail.com");
+                    Address receptionsAddress = new Address("720 W Mallon Ave", "Espocane");
+                    receptionsAddress.GetFullAddress();
+                    Receptions event3 = new Receptions("27/04/23", "17 P.M", "rsvp.27@gmail.com", receptionsAddress);
                     string choice3 = Menu();
                     Console.WriteLine();
                     if (choice3 == "1")

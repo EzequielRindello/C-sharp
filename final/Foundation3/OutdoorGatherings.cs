@@ -2,14 +2,12 @@ public class OutdoorGatherings : Event
 {
     private string _statementOfTheWeather;
 
-    public OutdoorGatherings(string date, string time, string statementOfTheWeather)
+    public OutdoorGatherings(string date, string time, string statementOfTheWeather, Address outdoorGatheringsAddress)
     {
         this._eventTitle = "Outdoor Gatherings";
         this._description = "Dont have a limit on attendees";
         this._date = date;
         this._time = time;
-        Address outdoorGatheringsAddress = new Address("1025 25th St N", "Great Falls");
-        outdoorGatheringsAddress.GetFullAddress();
         this._address = outdoorGatheringsAddress;
         this._statementOfTheWeather = statementOfTheWeather;
     }
