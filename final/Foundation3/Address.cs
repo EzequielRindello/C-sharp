@@ -7,7 +7,6 @@ public class Address
     {
         _street = street;
         _city = city;
-
     }
 
     public string GetFullAddress()
