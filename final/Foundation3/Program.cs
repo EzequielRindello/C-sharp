@@ -19,7 +19,7 @@ class Program
             switch (userInput)
             {
                 case "1":
-                    // Creates a lecture objetc.
+                    // Creates a lecture and addres objetc.
                     Console.Clear();
                     Address lecturesAddress = new Address("301 W 13th St Suite 100", "Kansas City");
                     lecturesAddress.GetFullAddress();
@@ -50,7 +50,7 @@ class Program
                     Console.Clear();
                     break;
                 case "2":
-                    // Creates a outdoor gathering objetc.
+                    // Creates a outdoor gathering and addres objetc.
                     Console.Clear();
                     Address outdoorGatheringsAddress = new Address("1025 25th St N", "Great Falls");
                     outdoorGatheringsAddress.GetFullAddress();
@@ -81,7 +81,7 @@ class Program
                     Console.Clear();
                     break;
                 case "3":
-                    // Creates a reception objetc.
+                    // Creates a reception and addres objetc.
                     Console.Clear();
                     Address receptionsAddress = new Address("720 W Mallon Ave", "Espocane");
                     receptionsAddress.GetFullAddress();
