@@ -23,7 +23,7 @@ class Program
         {
             // Notice that all shapes have a GetColor method from the base class
             //string color = s.GetColor();
-            s.GetSummary();
+            Console.WriteLine(s.GetSummary());
             // Notice that all shapes have a GetArea method, but the behavior is
             // different for each type of shape
             //double area = s.GetArea();
