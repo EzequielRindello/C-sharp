@@ -1,12 +1,12 @@
 public class Activity
 {
     protected string _date;
-    protected float _time;
+    protected float _minutes;
 
-    public Activity(string date, float time)
+    public Activity(string date, float minutes)
     {
         this._date = date;
-        this._time = time;
+        this._minutes = minutes;
     }
 
     public virtual float Distance()
@@ -22,10 +22,5 @@ public class Activity
     public virtual float Pace()
     {
         return 0;
-    }
-
-    public virtual string Summary()
-    {
-        return $"";
     }
 }
