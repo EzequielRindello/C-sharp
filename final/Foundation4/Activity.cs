@@ -1,39 +1,33 @@
 public class Activity
 {
     protected string _date;
-    protected float _minutes;
+    protected double _minutes;
     protected string _antivityName;
 
-    public Activity(string date, float minutes, string antivityName)
+    public Activity(string date, double minutes, string antivityName)
     {
         this._date = date;
         this._minutes = minutes;
         this._antivityName = antivityName;
     }
 
-    public Activity(string date, float minutes)
-    {
-        this._date = date;
-        this._minutes = minutes;
-    }
-
-    public virtual float Distance()
+    public virtual double Distance()
     {
         return 0;
     }
 
-    public virtual float Speed()
+    public virtual double Speed()
     {
         return 0;
     }
 
-    public virtual float Pace()
+    public virtual double Pace()
     {
         return 0;
     }
 
     public string GetSummary()
     {
-        return $"{_date} {_antivityName} ({_minutes})- Distance 3.0 miles, Speed 6.0 mph, Pace: 10.0 min per mile";
+        return $"{_date} {_antivityName} ({_minutes})- Distance {Distance()} km, Speed {Speed()} kph, Pace: {Pace()} min per km";
     }
 }

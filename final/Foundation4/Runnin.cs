@@ -1,8 +1,8 @@
 public class Running : Activity
 {
-    private float _distance;
+    private double _distance;
 
-    public Running(string date, float minutes, float distance, string antivityName) : base(date, minutes, antivityName)
+    public Running(string date, double minutes, double distance, string antivityName) : base(date, minutes, antivityName)
     {
         this._date = date;
         this._minutes = minutes;
@@ -10,12 +10,16 @@ public class Running : Activity
         this._distance = distance;
     }
 
-    public override float Speed()
+    public override double Speed()
     {
         return (_distance / _minutes) * 60;
     }
 
-    public override float Distance()
+    public override double Pace()
+    {
+        return _minutes / _distance;
+    }
+    public override double Distance()
     {
         return _distance;
     }

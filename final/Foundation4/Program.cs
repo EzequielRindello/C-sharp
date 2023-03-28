@@ -9,7 +9,7 @@ class Program
         Console.WriteLine();
 
         // Create some activities and add to the list of activities
-        Running running = new Running("27/3/2023", 45, 7, "Running");
+        Running running = new Running("27/3/2023", 30, 3, "Running");
         activities.Add(running);
 
         Cycling cycling = new Cycling("28/3/2023", 60, 25, "Cycling");
@@ -19,16 +19,9 @@ class Program
         activities.Add(swimming);
 
         // Iterate through the list of activities
-        foreach (Activity s in activities)
+        foreach (Activity activity in activities)
         {
-            // Notice that all shapes have a GetColor method from the base class
-            //string color = s.GetColor();
-            Console.WriteLine(s.GetSummary());
-            // Notice that all shapes have a GetArea method, but the behavior is
-            // different for each type of shape
-            //double area = s.GetArea();
-
-            //Console.WriteLine($"The {color} shape has an area of {area}.");
+            Console.WriteLine(activity.GetSummary());
         }
     }
 }
