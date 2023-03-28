@@ -22,7 +22,7 @@ class Program
         // Create some customers
         Customer customer1 = new Customer("John Doe", address1);
         Customer customer2 = new Customer("Jane Smith", address2);
-        Customer customer3 = new Customer("Juan Perez", address2);
+        Customer customer3 = new Customer("Juan Perez", address3);
 
         // Create some orders, note how we clear the list for each order.
         Order order1 = new Order(customer1, _products,"USA");
@@ -35,6 +35,7 @@ class Program
         Console.WriteLine(customer1.GetShippingLabel());
         Console.WriteLine($"Total cost: ${order1.CalculateTotalCost()}");
         _products.Clear();
+        Console.WriteLine("-------------------------------------------------------------------");
         Console.WriteLine();
 
         Order order2 = new Order(customer2, _products,"CANADA");
@@ -47,6 +48,7 @@ class Program
         Console.WriteLine(customer2.GetShippingLabel());
         Console.WriteLine($"Total cost: ${order2.CalculateTotalCost()}");
         _products.Clear();
+        Console.WriteLine("-------------------------------------------------------------------");
         Console.WriteLine();
 
         Order order3 = new Order(customer3, _products,"MEXICO");
@@ -59,6 +61,7 @@ class Program
         Console.WriteLine(customer3.GetShippingLabel());
         Console.WriteLine($"Total cost: ${order3.CalculateTotalCost()}");
         _products.Clear();
+        Console.WriteLine("-------------------------------------------------------------------");
         Console.WriteLine();
     }
 }
