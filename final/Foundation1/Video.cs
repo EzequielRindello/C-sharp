@@ -1,4 +1,4 @@
-public class Video 
+public class Video
 {
     public string _title;
     public string _author;
@@ -23,8 +23,8 @@ public class Video
         return _comments.Count;
     }
 
-    public List<Comment> Comments
+    public List<Comment> Comments()
     {
-        get { return _comments; }
+        return _comments;
     }
 }

@@ -25,7 +25,7 @@ class Program
             Console.WriteLine("Number of comments: " + video.NumComments());
             Console.WriteLine();
             Console.WriteLine("Comments:");
-            foreach (Comment comment in video.Comments)
+            foreach (Comment comment in video.Comments())
             {
                 Console.WriteLine("- " + comment._name + ": " + comment._text);
             }
