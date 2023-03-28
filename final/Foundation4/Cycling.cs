@@ -1,18 +1,20 @@
 public class Cycling : Activity
 {
     private double _speed;
+    private double _bikeDistance;
 
-    public Cycling(string date, float minutes, double speed, string antivityName) : base(date, minutes, antivityName)
+    public Cycling(string date, float minutes, double speed, double bikeDistance, string antivityName) : base(date, minutes, antivityName)
     {
         this._date = date;
         this._minutes = minutes;
-        this._antivityName = antivityName;
         this._speed = speed;
+        this._bikeDistance = bikeDistance;
+        this._antivityName = antivityName;
     }
 
     public override double Distance()
     {
-        return  0;
+        return _bikeDistance;
     }
 
     public override double Speed()
