@@ -4,6 +4,7 @@ class Program
     {
         // Clear the console and create a list of activities
         Console.Clear();
+        int i = 0;
         List<Activity> activities = new List<Activity>();
         Console.WriteLine("Program 4: Polymorphism with Exercise Tracking.");
         Console.WriteLine();
@@ -21,6 +22,9 @@ class Program
         // Iterate through the list of activities
         foreach (Activity activity in activities)
         {
+            i++;
+            Console.WriteLine("-------------------------------------------------------------------------------");
+            Console.Write($"{i}- ");
             Console.WriteLine(activity.GetSummary());
         }
     }

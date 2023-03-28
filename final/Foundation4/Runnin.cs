@@ -19,6 +19,7 @@ public class Running : Activity
     {
         return _minutes / _distance;
     }
+    
     public override double Distance()
     {
         return _distance;
