@@ -9,4 +9,19 @@ public class Cycling : Activity
         this._antivityName = antivityName;
         this._speed = speed;
     }
+
+    public override double Distance()
+    {
+        return  0;
+    }
+
+    public override double Speed()
+    {
+        return 60 / (60 / _speed);
+    }
+
+    public override double Pace()
+    {
+        return 60 / _speed;
+    }
 }

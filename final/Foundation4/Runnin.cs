@@ -10,6 +10,11 @@ public class Running : Activity
         this._distance = distance;
     }
 
+    public override double Distance()
+    {
+        return _distance;
+    }
+
     public override double Speed()
     {
         return (_distance / _minutes) * 60;
@@ -19,9 +24,5 @@ public class Running : Activity
     {
         return _minutes / _distance;
     }
-    
-    public override double Distance()
-    {
-        return _distance;
-    }
+
 }

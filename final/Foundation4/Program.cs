@@ -13,10 +13,10 @@ class Program
         Running running = new Running("27/3/2023", 30, 3, "Running");
         activities.Add(running);
 
-        Cycling cycling = new Cycling("28/3/2023", 60, 25, "Cycling");
+        Cycling cycling = new Cycling("28/3/2023", 45, 25, "Cycling");
         activities.Add(cycling);
 
-        Swimming swimming = new Swimming("29/3/2023", 60, 35, "Swimming");
+        Swimming swimming = new Swimming("29/3/2023", 60, 25, "Swimming");
         activities.Add(swimming);
 
         // Iterate through the list of activities
