@@ -15,10 +15,10 @@ public class OutdoorGatherings : Event
     public void OutdoorGatheringsDetails()
     {
         Console.WriteLine($"The Statement of theWeather will be {_statementOfTheWeather}");
-        Console.WriteLine("------------------------------------------------------------------------------------------------------------------");
+        Console.WriteLine("--------------------------------------------------------------------------------------------------------------------------------------------------");
         Console.WriteLine("Outdoor events are conditioned by the weather.");
         Console.WriteLine("These types of events do not have a capacity for guests, feel free to attend!");
         Console.WriteLine(StandardDetails());
-        Console.WriteLine("------------------------------------------------------------------------------------------------------------------");
+        Console.WriteLine("--------------------------------------------------------------------------------------------------------------------------------------------------");
     }
 }
