@@ -3,8 +3,8 @@ class Program
     static void Main(string[] args)
     {
         // Clear the console and create a list of activities
-        Console.Clear();
         int i = 0;
+        Console.Clear();
         List<Activity> activities = new List<Activity>();
         Console.WriteLine("Program 4: Polymorphism with Exercise Tracking.");
         Console.WriteLine();
@@ -27,5 +27,8 @@ class Program
             Console.Write($"{i}- ");
             Console.WriteLine(activity.GetSummary());
         }
+
+        Console.WriteLine("-------------------------------------------------------------------------------");
+        Console.WriteLine();
     }
 }
