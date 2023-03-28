@@ -17,7 +17,7 @@ public class Swimming : Activity
 
     public override double Speed()
     {
-        return _numberOfLaps / _minutes * 60;
+        return (_numberOfLaps / _minutes) * 60;
     }
 
     public override double Pace()
