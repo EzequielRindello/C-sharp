@@ -25,6 +25,7 @@ class Program
         Customer customer3 = new Customer("Juan Perez", address3);
 
         // Create some orders, note how we clear the list for each order.
+        // The program specification doesn't ask to iterate through so I decided to do it this way without a for loop.
         Order order1 = new Order(customer1, _products,"USA");
         order1._products.Add(product1);
         order1._products.Add(product2);
