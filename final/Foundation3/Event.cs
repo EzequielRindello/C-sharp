@@ -14,7 +14,7 @@ public class Event
     public void ReadKey()
     {
         Console.WriteLine();
-        Console.WriteLine("Enter any key to continue when you fell ready.");
+        Console.WriteLine("Enter any key to continue when you feel ready.");
         Console.ReadKey();
     }
 
