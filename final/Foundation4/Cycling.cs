@@ -19,7 +19,7 @@ public class Cycling : Activity
 
     public override double Speed()
     {
-        return 60 / (60 / _speed);
+        return (_bikeDistance / _minutes) * 60;
     }
 
     public override double Pace()

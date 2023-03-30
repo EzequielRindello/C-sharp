@@ -22,7 +22,7 @@ public class Swimming : Activity
 
     public override double Pace()
     {
-        return _minutes / _numberOfLaps;
+        return _minutes / Distance();
     }
 
 }
