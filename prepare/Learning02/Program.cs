@@ -3,11 +3,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        Job job1 = new Job();
-        job1._jobTitle = "Tornero";
-        job1._company = "Rinaudo";
-        job1._startYear = 2019;
-        job1._endYear = 2019;
+        // manera simplificada
+        Job job1 = new()
+        {
+            _jobTitle = "Tornero",
+            _company = "Rinaudo",
+            _startYear = 2019,
+            _endYear = 2019
+        };
 
         Job job2 = new Job();
         job2._jobTitle = "Operario";
