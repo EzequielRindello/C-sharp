@@ -16,7 +16,7 @@ class Program
             Console.WriteLine("   1: Lectures \n   2: Outdoor Gatherings\n   3: Receptions\n   4: Quit");
             string userInput = Console.ReadLine();
 
-            switch (userInput)
+            switch (userInput.Trim().ToLower())
             {
                 case "1":
                     // Creates a lecture and addres objetc.
@@ -57,17 +57,17 @@ class Program
                     OutdoorGatherings event2 = new OutdoorGatherings("29/04/23", "12 P.M", "Sunny", outdoorGatheringsAddress);
                     string choice2 = Menu();
                     Console.WriteLine();
-                    if (choice2 == "1")
+                    if (choice2.Trim().ToLower() == "1")
                     {
                         Console.WriteLine(event2.StandardDetails());
                         event2.ReadKey();
                     }
-                    else if (choice2 == "2")
+                    else if (choice2.Trim().ToLower() == "2")
                     {
                         event2.OutdoorGatheringsDetails();
                         event2.ReadKey();
                     }
-                    else if (choice2 == "3")
+                    else if (choice2.Trim().ToLower() == "3")
                     {
                         Console.WriteLine(event2.ShortDescription());
                         event2.ReadKey();
@@ -88,17 +88,17 @@ class Program
                     Receptions event3 = new Receptions("27/04/23", "17 P.M", "rsvp.27@gmail.com", receptionsAddress);
                     string choice3 = Menu();
                     Console.WriteLine();
-                    if (choice3 == "1")
+                    if (choice3.Trim().ToLower() == "1")
                     {
                         Console.WriteLine(event3.StandardDetails());
                         event3.ReadKey();
                     }
-                    else if (choice3 == "2")
+                    else if (choice3.Trim().ToLower() == "2")
                     {
                         event3.ReceptionsDetails();
                         event3.ReadKey();
                     }
-                    else if (choice3 == "3")
+                    else if (choice3.Trim().ToLower() == "3")
                     {
                         Console.WriteLine(event3.ShortDescription());
                         event3.ReadKey();
